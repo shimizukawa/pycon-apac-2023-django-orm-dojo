@@ -1,0 +1,15 @@
+{% load status %}
+<html>
+<body>
+
+<ul>
+{% for staff in staffs %}
+  <li>
+  <a href="{% url 'staff-detail' staff.pk %}">
+    {{ staff.name }}</a> : {{ staff|staff_status }}
+  </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
