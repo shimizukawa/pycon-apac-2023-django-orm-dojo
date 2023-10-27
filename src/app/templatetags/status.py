@@ -10,7 +10,7 @@ def staff_status(obj: Staff):
     return f"最終ログイン:{obj.last_login:%Y-%m-%d}"
 
 
-def staff_status2(obj: dict):
+def staff_status_dict(obj: dict):
     return f"最終ログイン:{obj['last_login']:%Y-%m-%d}"
 
 
